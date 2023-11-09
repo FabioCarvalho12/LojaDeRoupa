@@ -1,0 +1,172 @@
+/* Define uma fonte padrão para o documento */
+*{
+    font-family: 'Georgia', serif;
+}
+
+/* Define uma cor de fundo para o corpo do documento */
+body {
+    background-color: #F0F0F0; /* Cinza claro */
+}
+#conteiner{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+}
+
+#conteiner > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Define um estilo para o título principal */
+h1 {
+    color: #FFC0CB; /* Rosa claro */
+    text-align: center;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+/* Define um estilo para o formulário de cadastro */
+form {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #FFC0CB; /* Rosa claro */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 192, 203, 0.5); /* Rosa claro com transparência */
+}
+
+/* Define um estilo para os rótulos dos campos do formulário */
+label {
+    display: inline-block;
+    width: 20%;
+    font-weight: normal;
+    color: #FFC0CB; /* Rosa claro */
+}
+
+/* Define um estilo para os campos de entrada do formulário */
+input {
+    display: inline-block;
+    width: 70%;
+    border: 2px solid #FFC0CB; /* Rosa claro */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Define um estilo para o botão de cadastro */
+input[type=submit] {
+    width: 30%;
+    margin-left: 35%;
+    color: white;
+    background-color: #FFC0CB; /* Rosa claro */
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: #FF69B4; /* Rosa médio */
+}
+
+/* Define um estilo para a tabela de produtos */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Define um estilo para os cabeçalhos da tabela */
+th {
+    color: white;
+    background-color: #FFC0CB; /* Rosa claro */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Define um estilo para as células da tabela */
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+/* Define um estilo para os links de ação da tabela */
+a {
+    color: #FFC0CB; /* Rosa claro */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Define um estilo para os parágrafos de mensagem */
+p {
+    width: 80%;
+    margin: 10px auto;
+    color: #FFC0CB; /* Rosa claro */
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Define um estilo para os dispositivos com largura máxima de 600px (responsivo) */
+@media (max-width: 600px) {
+    /* Reduz o tamanho da fonte do título principal */
+    h1 {
+        font-size: 24px;
+        color: #FF69B4; /* Rosa médio */
+        text-shadow: none;
+    }
+
+    /* Reduz a largura do formulário de cadastro */
+    form {
+        width: 90%;
+        padding: 10px;
+        border-color: #FF69B4; /* Rosa médio */
+        box-shadow: none;
+    }
+
+    /* Reduz a largura dos campos de entrada do formulário */
+    input {
+        width: 60%;
+        margin-bottom: 10px;
+        border-color: #FF69B4; /* Rosa médio */
+    }
+
+    /* Reduz a largura do botão de cadastro */
+    input[type=submit] {
+        width: 50%;
+        margin-left: 25%;
+        padding: 5px;
+        font-size: 14px;
+        background-color: #FF69B4; /* Rosa médio */
+    }
+
+    /* Reduz a largura da tabela de produtos */
+    table {
+        width: 90%;
+    }
+
+    /* Reduz a cor dos cabeçalhos da tabela */
+    th {
+        background-color: #FF69B4; /* Rosa médio */
+    }
+
+    /* Reduz a cor dos links de ação da tabela */
+    a {
+        color: #FF69B4; /* Rosa médio */
+    }
+
+    /* Reduz a cor dos parágrafos de mensagem */
+    p {
+        color: #FF69B4; /* Rosa médio */
+    }
+}
